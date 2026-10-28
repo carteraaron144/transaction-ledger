@@ -10,7 +10,9 @@ fun main() {
 
     var lines = program.readFile(FILE_PATH)
 
-    program.run(lines)
+    if (lines.isNotEmpty()) {
+        program.run(lines)
+    }
 
     program.printOutput()
 }

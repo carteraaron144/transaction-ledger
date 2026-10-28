@@ -147,4 +147,8 @@ class Program {
             println(item.toString())
         }
     }
+
+    fun getBalance(id: String) : BigDecimal {
+        return accounts.first { it.accountId == id }.balance
+    }
 }
